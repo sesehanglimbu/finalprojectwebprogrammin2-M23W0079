@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+  <title>Registration Form</title>
+</head>
+<body>
+  <div class="container">
+    <header><span id="real-time"></span></header>
+    <h1>Registration for Personal Information</h1>
+      <form action="#">
+      <div class="form first">
+        <div class="details personal">
+          <span class="title">Personal Details</span>
+
+          <div class="fields">
+            <div class="input-field">
+              <label for="full name">Full Name</label>
+              <input type="text" name="fullname" placeholder="Enter You name" required>
+            </div>
+
+            <div class="input-field">
+              <label for="date of birth">Date Of Birth</label>
+              <input type="date" name="date of birth" placeholder="Enter Birth date" required>
+            </div>
+
+            <div class="input-field">
+              <label for="email">Email</label>
+              <input type="email" name="email" placeholder="Enter email" required>
+            </div>
+
+            <div class="input-field">
+              <label for="mobile number">Mobile Number</label>
+              <input type="number" name="mobile number" placeholder="Enter mobile number" required>
+            </div>
+            
+            <div class="input-field">
+              <label>Gender</label>
+              <div class="checkbox-group">
+                  <div class="checkbox-item">
+                      <input type="checkbox" id="genderMale" name="gender" value="male">
+                      <label for="genderMale">Male</label>
+                  </div>
+                  <div class="checkbox-item">
+                      <input type="checkbox" id="genderFemale" name="gender" value="female">
+                      <label for="genderFemale">Female</label>
+                  </div>
+              </div>
+          </div>
+          
+            <div class="input-field">
+              <label for="occupation">Occupation</label>
+              <select name="occupation" id="occupation" required>
+                  <option value="">Select your occupation</option>
+                  <option value="student">Student</option>
+                  <option value="teacher">Teacher</option>
+                  <option value="engineer">Engineer</option>
+                  <option value="doctor">Doctor</option>
+              </select>
+          </div>
+
+          
+
+          </div>
+        </div>
+
+        <div class="details ID">
+          <span class="title">Identity Details</span>
+
+          <div class="fields">
+            <div class="input-field">
+              <label for="id type">ID Type</label>
+              <input type="text" name="id type" placeholder="Enter ID type" required>
+            </div>
+
+            <div class="input-field">
+              <label for="id number">ID Number</label>
+              <input type="number and text" name="id number" placeholder="Enter Id number" required>
+            </div>
+
+            <div class="input-field">
+              <label for="issued authority">Issued Authority</label>
+              <input type="text" name="issued authority" placeholder="Enter issued authority" required>
+            </div>
+
+            <div class="input-field">
+              <label for="issued state">Issued State</label>
+              <input type="text" name="issued date" placeholder="Enter issued state" required>
+            </div>
+            
+            <div class="input-field">
+              <label for="issued date">Issued Date</label>
+              <input type="date" name="issued date" placeholder="Enter your issued date" required>
+            </div>
+
+            <div class="input-field">
+              <label for="expiry date">Expiry Date</label>
+              <input type="date" name="expiry date" placeholder="Enter your expiry date" required>
+            </div>
+          </div>
+        
+          <button type="button" class="nextBtn">
+            <span class="btnText">Next</span>
+            <i class="uil uil-navigator"></i>
+          </button>
+        </div>
+      </div>
+
+
+      
+    
+
+
+      <div class="form second">
+        <div class="details address">
+          <span class="title">Address Details</span>
+
+          <div class="fields">
+            <div class="input-field">
+              <label for="country">Country</label>
+              <input type="text" name="country" placeholder="Enter Your country name" required>
+            </div>
+
+            <div class="input-field">
+              <label for="state">State</label>
+              <input type="text" name="state" placeholder="Enter your state" required>
+            </div>
+
+            <div class="input-field">
+              <label for="address">Address</label>
+              <input type="text" name="address" placeholder="Enter Your address" required>
+            </div>
+
+            <div class="input-field">
+              <label for="district">District</label>
+              <input type="text" name="district" placeholder="Enter your District" required>
+            </div>
+            
+            <div class="input-field">
+              <label for="block number">Block Number</label>
+              <input type="number" name="block number" placeholder="Enter your block number" required>
+            </div>
+
+            <div class="input-field">
+              <label for="wardNumber">Ward Number</label>
+              <input type="range" id="wardNumber" name="wardNumber" min="1" max="50">
+              <span id="wardNumberValue">25</span> <!-- Display the selected value -->
+          </div>
+          
+          
+          </div>
+        </div>
+
+        <div class="details family">
+          <span class="title">Family Details</span>
+
+          <div class="fields">
+            <div class="input-field">
+              <label for="father name">Father Name</label>
+              <input type="text" name="father name" placeholder="Enter father name" required>
+            </div>
+
+            <div class="input-field">
+              <label for="mother name">Mother Name</label>
+              <input type="text" name="mother name" placeholder="Enter mother name" required>
+            </div>
+
+            <div class="input-field">
+              <label for="grandfather name">Grandfather Name</label>
+              <input type="text" name="grandfather name" placeholder="Enter grandfather name" required>
+            </div>
+
+            <div class="input-field">
+              <label for="spouse name">Spouse Name</label>
+              <input type="text" name="spouse name" placeholder="Enter Spouse Name">
+            </div>
+            
+            <div class="input-field">
+              <label for="married">Marital Status</label>
+              <select name="married" id="married">
+                <option value="married">Married</option>
+                <option value="unmarried">Unmarried</option>
+                <option value="divorced">Divorced</option>
+              </select>
+            </div>
+            
+
+            <div class="input-field">
+              <label>Childrens</label>
+              <input type="text" name="childrens" placeholder="How many childrens you have?">
+            </div>
+          </div>
+
+                    
+
+
+          <div class="buttons">
+            <div class="backBtn">
+              <i class="uil uil-navigator"></i>
+              <span class="btnText">Back</span>
+            </div>
+        
+              <button type="submit" class="nextBtn">
+
+                  <span class="btnText">Submit</span>
+                  <i class="uil uil-navigator"></i>
+              </button>
+
+    
+      
+          
+          </div>
+        </div>
+
+
+        
+      </form>
+
+
+
+
+    </div>
+   
+    
+   
+   
+
+    <!-- Textarea for displaying JSON data -->
+<label for="jsonOutput">Submission showing down below by using JSON</label>
+<textarea id="jsonOutput" rows="10" style="width: 100%; margin-top: 20px;"></textarea>
+    <script src="script.js"></script>
+  </body>
+  </html>
+  
